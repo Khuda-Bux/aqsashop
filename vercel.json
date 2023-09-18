@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "aqsashop/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "aqsashop/wsgi.py"
+      }
+    ]
+}
